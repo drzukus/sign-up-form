@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+}
+
+.content {
+    display: flex;
+}
+
+.left {
+    background-image: url("./images/leaf.jpg");
+    background-size: cover;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner {
+    display: flex;
+    font-family: "Norse Bold";
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    height: 15vh;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.credit {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
+
+.credit a {
+    color: white;
+}
