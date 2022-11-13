@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
     </style>
     <title>Sign Up</title>
 </head>
@@ -27,11 +27,11 @@
                 <p>This is not a real online service! You know you need something like this in your
                     life to help you realize your deepest dreams. 
                 </p>
-                <p>Sign up <span>now</span> to get started</p>
+                <p>Sign up <span>now</span> to get started.</p>
                 <p>You <span>know</span> you want to.</p>
             </div>
             <form action="/">
-                <p>Let's do this!</p>
+                <p class="cta">Let's do this!</p>
                 <div class="input-areas">
                     <div class="input">
                         <label for="first-name">FIRST NAME</label>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="input">
                         <label for="confirm-pw">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmed-passowrd" id="confirm-pw" required>
+                        <input type="password" name="confirmed-passowrd" id="confirm-pw" class="error" required>
                     </div>
                     <div class="error-msg-wrapper">
                         <p class="error-msg">* Passwords do not match</p>
@@ -66,5 +66,6 @@
             <p class="log-in">Already have an account? <a href="/">Log in</a></p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

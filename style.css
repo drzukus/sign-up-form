@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 .left {
     background-image: url("./images/leaf.jpg");
     background-size: cover;
-    width: 33vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,3 +56,109 @@ body {
 .credit a {
     color: white;
 }
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    background-color: rgb(243 244 246);
+    justify-content: center;
+}
+
+span {
+    font-style: italic;
+}
+
+.main-text {
+    font-size: 1.2rem;
+    padding: 0 6rem 2.5rem 6rem;
+    font-weight: 500;
+}
+
+.main-text p:last-child {
+    margin: 2rem 0;
+}
+
+form {
+    background-color: white;
+    padding: 2rem 6rem;
+    box-shadow: 0 6px 10px rgb(0, 0, 0, 0.1)
+}
+
+.cta {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.input-areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 70%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+}
+
+.input > input {
+    width: 200px;
+    padding: 0.3rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input .error {
+    border: 2px solid red;
+}
+
+.input > input:focus {
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.1);
+    outline: none;
+    border: 1px solid blue;
+}
+
+.error-msg-wrapper {
+    position: relative;
+    margin-top: -1rem;
+}
+
+
+.error-msg {
+    display: none;
+    position: absolute;
+    color: red;
+    top: 0rem;
+    font-size: 0.8rem;
+}
+
+
+#create-account-btn {
+    background-color: #596D48;
+    color: white;
+    font-weight: 500;
+    padding: 0.8rem 3rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.15);
+    border-style: none;
+    cursor: pointer;
+}
+
+.log-in {
+    padding: 2rem 6rem;
+    padding-bottom: 0;
+}
+
+.log-in a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 500;
+}
+
