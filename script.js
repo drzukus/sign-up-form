@@ -5,8 +5,8 @@ form.addEventListener("submit", e => {
     const errorMsg = document.querySelector(".error-msg")
     if (pass1.value !== pass2.value) {
         e.preventDefault()
-        pass1.classList.add("error");
-        pass2.classList.add("error");
+        pass1.style.border = "1px solid red"
+        pass2.style.border = "1px solid red"
         errorMsg.style.display = "block";
     }
 });

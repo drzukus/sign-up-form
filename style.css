@@ -115,10 +115,6 @@ label {
     border-radius: 5px;
 }
 
-input .error {
-    border: 2px solid red;
-}
-
 .input > input:focus {
     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.1);
     outline: none;
@@ -143,7 +139,7 @@ input .error {
 #create-account-btn {
     background-color: #596D48;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
     padding: 0.8rem 3rem;
     border-radius: 5px;
     box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.15);
